@@ -1,11 +1,9 @@
-package com.informatorio.apiStartups.repository;
+package com.informatorio.actividadfinal.repository;
 
-import com.informatorio.apiStartups.entity.Emprendimiento;
-
+import com.informatorio.actividadfinal.entity.Emprendimiento;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-@Repository //FindOne FindBy FindAll Save Delete 
+@Repository
 public interface EmprendimientoRepository extends JpaRepository<Emprendimiento, Long> {
-    
 }

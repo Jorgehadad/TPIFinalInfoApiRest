@@ -1,13 +1,11 @@
-package com.informatorio.apiStartups;
+package com.informatorio.actividadfinal;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ApiStartupsApplication {
-
+public class ActividadfinalApplication {
 	public static void main(String[] args) {
-		SpringApplication.run(ApiStartupsApplication.class, args);
+		SpringApplication.run(ActividadfinalApplication.class, args);
 	}
-
 }

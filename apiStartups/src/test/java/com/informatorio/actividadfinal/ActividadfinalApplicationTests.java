@@ -1,13 +1,11 @@
-package com.informatorio.apiStartups;
+package com.informatorio.actividadfinal;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ApiStartupsApplicationTests {
-
+class ActividadfinalApplicationTests {
 	@Test
 	void contextLoads() {
 	}
-
 }
