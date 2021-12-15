@@ -25,6 +25,7 @@ import org.hibernate.annotations.Where;
 @Where(clause = "activo = true")
 @JsonIgnoreProperties(ignoreUnknown = true, value = {"hibernateLazyInitializer"})
 public class Usuario {
+    //autogenerado
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -32,6 +33,7 @@ public class Usuario {
     private String nombre;
     @NotEmpty(message = "apellido no deberia estar vacio")
     private String apellido;
+    //unique = true
     @NotEmpty(message = "el email debe ser valido")
     @Column(unique = true)
     @Email(regexp = "^[\\w!#$%&'*+/=?`{|}~^-]+(?:\\.[\\w!#$%&'*+/=?`{|}~^-]+)*@(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,6}$")

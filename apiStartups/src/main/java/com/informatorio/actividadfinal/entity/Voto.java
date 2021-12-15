@@ -15,6 +15,7 @@ public class Voto {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    //Generado por (mobile,web,servicio)
     @NotNull
     @Enumerated(value = EnumType.STRING)
     private Generado generado;

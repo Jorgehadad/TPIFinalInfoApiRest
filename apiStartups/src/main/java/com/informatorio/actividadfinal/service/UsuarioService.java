@@ -37,8 +37,12 @@ public class UsuarioService {
         return usuarioRepository.save(usuarioModificado);
     }
     public List<Usuario> obtenerTodos(LocalDateTime fechaDeCreacion, String ciudad) {
-        if (fechaDeCreacion != null) {return usuarioRepository.findByFechaDeCreacion(fechaDeCreacion);
-        } else if (ciudad != null) { return usuarioRepository.findByCiudad(ciudad);
-        } else { return usuarioRepository.findAll(); }
+        if (fechaDeCreacion != null) {
+            return usuarioRepository.findByFechaDeCreacion(fechaDeCreacion);
+        } else if (ciudad != null) { 
+            return usuarioRepository.findByCiudad(ciudad);
+        } else { 
+            return usuarioRepository.findAll(); 
+        }
     }
 }
